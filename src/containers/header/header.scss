@@ -1,0 +1,192 @@
+
+ @import '../../main.scss';
+
+.graident__text{
+       
+    background: var(-graident-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gpt3__header{
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.gpt3__header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+
+    @include mobile{
+        margin: 0 0 3rem;
+    }
+
+    h1{
+        font-family: var(--font-family);
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 75px;
+        letter-spacing: -0.04em;
+
+        @include tablet {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        @include xsmobile{
+            font-size: 35px;
+            line-height: 48px;
+        }
+
+        @include smallest{
+            font-size: 25px;
+            line-height: 40px;
+
+        }
+    }
+
+    p{
+        font-family:var(--font-family);
+        font-size: 20px;
+        line-height: 27px;
+        color: var(--color-text);
+        margin-top: 1.5rem;
+
+        @include tablet{
+            font-size: 15px;
+            line-height: 18px;
+        }
+        @include xsmobile{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        @include smallest{
+            font-size: 11px;
+            line-height: 18px;
+        }
+    }
+}
+
+.gpt3__header-content__input{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+
+    input{
+        background: #052D56;
+        min-height: 50px;
+        flex: 2;
+        width: 100%;
+        border-radius: 5px 0px 0px 5px;
+        font-family: var(--font-family);
+        font-size: 20px;
+        line-height: 27px;
+        outline: none;
+        border: 2px solid var(--color-footer);
+        color: #fff;
+        padding: 0 1em;
+        border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+
+       @include tablet{
+        font-size: 16px;
+        line-height: 24px;
+       }
+
+       @include xsmobile{
+        font-size: 12px;
+
+       }
+       @include smallest{
+        font-size: 10px;
+
+       }
+    }
+
+    button{
+
+        flex: 0.6;
+        width: 100%;
+        min-height: 50px;
+        padding: 0 1rem;
+        color: #fff;
+        background: #FF4820;
+        font-family: var(--font-family);
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+       border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        @include tablet{
+            font-size: 16px;
+            line-height: 24px;
+           }
+           @include xsmobile{
+            font-size: 12px;
+    
+           }
+           @include smallest{
+            font-size: 10px;
+            line-height: 10px;
+    
+           }
+    }
+}
+
+.gpt3__header__content-people{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+
+    @include tablet{
+        flex-direction: column;
+    }
+
+    img{
+        width: 181.79px;
+        height: 38px;
+    }
+ p{
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height:38px;
+    color: #fff;
+    text-align: center;
+
+    @include tablet{
+        margin: 0;
+
+    }
+ }   
+}
+
+.gpt3__headre-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width:100%;
+        height: 100%;
+    }
+}
+
+

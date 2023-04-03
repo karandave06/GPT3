@@ -1,0 +1,63 @@
+@import '../../main.scss';
+
+.gpt3__features{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+
+}
+
+.gpt3__features-heading{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex;
+    flex-direction: column;
+
+    text-align: left;
+    margin-right: 5rem;
+
+    @include mobile{
+        margin:  0 0 2rem 0;
+    }
+
+    h1{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 34px;
+line-height: 45px;
+
+@include xsmobile{
+    font-size: 27px;
+    line-height: 38px;
+}
+    }
+
+    p{
+        font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+
+
+color: #FF8A71;
+    }
+}
+
+.gpt3__features-container{
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}

@@ -1,0 +1,106 @@
+@import '../../main.scss';
+
+.gpt3__cta{
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+
+    @include smmobile{
+        flex-direction: column;
+    }
+
+    @include xsmobile{
+        margin: 4rem 2rem;
+    }
+
+}
+.gpt3__cta-content{
+    p{
+        font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 30px;
+/* or 250% */
+
+
+color: #0E0E0E;
+    }
+
+    h3{
+        font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 45px;
+/* or 188% */
+
+
+color: #000000;
+
+@include smmobile{
+    font-size: 18px;
+ }
+@include xsmobile{
+    line-height: 35px;
+    
+}
+
+@include smallest{
+    
+    font-size: 13px;
+    line-height: 22px;
+
+}
+
+
+
+    }
+}
+.gtp3__cta-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+
+    @include smmobile{
+        margin: 1rem 0 0;
+    }
+
+    button{
+        background: #000000;
+        border-radius: 40px;
+        color: white;
+        font-family: Manrope;
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        min-width: 150px;
+        outline: none;
+        border: none;
+
+        @include smmobile{
+            padding: 0.4rem;
+            font-size: 14px;
+
+        }
+
+        @include xsmobile{
+            line-height: 30px;
+            font-size: 12px;
+            padding: 0.2rem 0.2rem;
+
+            
+        }
+        
+    }
+}

@@ -1,0 +1,66 @@
+@import '../../main.scss';
+
+.gpt3__blog-container_article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(3, 27, 52);
+    @include mobile{
+        max-height: 80%;
+    
+        
+    }
+}
+.gpt3__blog-container_article-img{
+    width: 100%;
+    height: 100%;
+    background: rgb(3, 27, 52);
+
+
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.gpt3__blog-container_article-contentnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    height: 100%;
+
+    p{
+        font-family: var(font-family);
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 11.649px;
+        line-height: 35px;
+
+
+
+        &:last-child{
+            cursor: pointer;
+
+        }
+    }
+
+    h3{
+        font-family: var(--font-family);
+        font-weight: 800;
+        font-size: 25.11px;
+        line-height: 30px;
+        color: #ffffff;
+        margin-bottom: 5rem;
+        cursor: pointer;
+
+        @include xsmobile{
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    
+}
